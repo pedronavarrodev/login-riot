@@ -225,3 +225,7 @@ input:focus {
     background-position: center;
     flex: 1;
 }
+
+#musica { 
+    display: none 
+}

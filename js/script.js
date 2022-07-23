@@ -1,7 +1,9 @@
 
 const inputs = document.querySelectorAll('.input')
 const button = document.querySelector('.login__button')
-const audioTema = new Audio('./audio/tema.mp3')
+const audioTema = new Audio('/audio/tema.mp3')
+const videoTema = document.querySelector('videoBackground');
+
 
 const handleFocus = ({ target }) => {
     const span = target.previousElementSibling
@@ -30,9 +32,13 @@ inputs.forEach((input) => input.addEventListener('focus', handleFocus))
 inputs.forEach((input) => input.addEventListener('focusout', handleFocusOut))
 inputs.forEach((input) => input.addEventListener('input', handleChange))
 
-// Audio tema
+// Audio tema config
 audioTema.play()
 audioTema.volume = 0.07
 audioTema.loop = true
+audioTema.preload = true
 
+//Video Tema config
+videoTema.autoplay = true
+videoTema.load()
 
