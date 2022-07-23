@@ -202,7 +202,7 @@ input:focus {
 
  .wallpaper {
     width: 100%;
-    background-image: url('/img/bg-vava.jpg');
+    background-image: url('../img/bg-vava.jpg');
     background-size: cover;
     background-position: center;
     flex: 1;
@@ -224,8 +224,4 @@ input:focus {
     background-size: cover;
     background-position: center;
     flex: 1;
-}
-
-#musica { 
-    display: none 
 }
